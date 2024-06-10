@@ -7,17 +7,7 @@
     <table class= "table table-striped table-bordered table-hover">
         <th data-sort-ignore="true"><input type="checkbox" id="selectAll"></input></th>
         <thead>
-            <tr>
-                <th scope = "col"></th>
-                <th scope = "col">Customer Id</th>
-                <th scope = "col">First Name</th>
-                <th scope = "col">Last Name</th>
-                <th scope = "col">Phone Number</th>
-                <th scope = "col">Destination Name</th>
-                <th scope = "col">Date</th>
-                <th scope = "col">Balance Due</th>
-                <th scope = "col"></th>
-            </tr>
+            <%= render 'home/tableNave'  %>
         </thead>
         <tbody>
         <% @sample_cus_data.each do |sample_cus_datum| %>
@@ -28,16 +18,7 @@
         </tbody>
 
     <tfoot>
-        <tr>
-            <th scope = "col">Customer Id</th>
-            <th scope = "col">First Name</th>
-            <th scope = "col">Last Name</th>
-            <th scope = "col">Phone Number</th>
-            <th scope = "col">Destination Name</th>
-            <th scope = "col">Date</th>
-            <th scope = "col">Balance Due</th>
-            <th scope = "col"></th>
-        </tr>
+        <%= render 'home/tableNave'  %>
     </tfoot>
     </table>
     <%= submit_tag "Submit Selected" %>
