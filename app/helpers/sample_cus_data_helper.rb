@@ -1,0 +1,2 @@
+module SampleCusDataHelper
+end

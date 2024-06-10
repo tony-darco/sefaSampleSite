@@ -1,0 +1,52 @@
+<%= form_with(model: sample_cus_datum) do |form| %>
+  <% if sample_cus_datum.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sample_cus_datum.errors.count, "error") %> prohibited this sample_cus_datum from being saved:</h2>
+
+      <ul>
+        <% sample_cus_datum.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :customerid, style: "display: block" %>
+    <%= form.text_field :customerid %>
+  </div>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :destination, style: "display: block" %>
+    <%= form.text_field :destination %>
+  </div>
+
+  <div>
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :balance, style: "display: block" %>
+    <%= form.text_field :balance %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

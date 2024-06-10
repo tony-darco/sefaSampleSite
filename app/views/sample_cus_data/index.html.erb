@@ -1,0 +1,47 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Listings</h1>
+
+<div id="sample_cus_data">
+    <%= form_with url: sample_cus_data_path, method: :get, local: true do %>
+    <table class= "table table-striped table-bordered table-hover">
+        <th data-sort-ignore="true"><input type="checkbox" id="selectAll"></input></th>
+        <thead>
+            <tr>
+                <th scope = "col"></th>
+                <th scope = "col">Customer Id</th>
+                <th scope = "col">First Name</th>
+                <th scope = "col">Last Name</th>
+                <th scope = "col">Phone Number</th>
+                <th scope = "col">Destination Name</th>
+                <th scope = "col">Date</th>
+                <th scope = "col">Balance Due</th>
+                <th scope = "col"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <% @sample_cus_data.each do |sample_cus_datum| %>
+            <%= render sample_cus_datum %>
+            <p>
+            </p>
+        <% end %>
+        </tbody>
+
+    <tfoot>
+        <tr>
+            <th scope = "col">Customer Id</th>
+            <th scope = "col">First Name</th>
+            <th scope = "col">Last Name</th>
+            <th scope = "col">Phone Number</th>
+            <th scope = "col">Destination Name</th>
+            <th scope = "col">Date</th>
+            <th scope = "col">Balance Due</th>
+            <th scope = "col"></th>
+        </tr>
+    </tfoot>
+    </table>
+    <%= submit_tag "Submit Selected" %>
+    <% end %>
+</div>
+
+<%= link_to "New sample cus datum", new_sample_cus_datum_path %>

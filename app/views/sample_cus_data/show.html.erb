@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sample_cus_datum %>
+
+<div>
+  <%= link_to "Edit this sample cus datum", edit_sample_cus_datum_path(@sample_cus_datum) %> |
+  <%= link_to "Back to sample cus data", sample_cus_data_path %>
+
+  <%= button_to "Destroy this sample cus datum", @sample_cus_datum, method: :delete %>
+</div>

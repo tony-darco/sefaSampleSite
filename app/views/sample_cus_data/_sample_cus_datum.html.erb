@@ -1,0 +1,14 @@
+<div id="<%= dom_id sample_cus_datum %>">
+
+    <tr>
+        <td><input class="form-check-input selectable" type="checkbox" name="item_ids[]" value="<%= sample_cus_datum.id %>"></td>
+        <td><%= sample_cus_datum.customerid %></td>
+        <td><%= sample_cus_datum.first_name %></td>
+        <td><%= sample_cus_datum.last_name %></td>
+        <td><%= sample_cus_datum.phone %></td>
+        <td><%= sample_cus_datum.destination %></td>
+        <td><%= sample_cus_datum.date %></td>
+        <td><%= sample_cus_datum.balance %></td>
+        <td> <%= link_to "Show", edit_sample_cus_datum_path(sample_cus_datum) %></td>
+    </tr>
+</div>

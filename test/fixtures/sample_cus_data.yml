@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customerid: MyString
+  first_name: MyString
+  last_name: MyString
+  destination: MyString
+  phone: MyString
+  date: 2024-06-06
+  balance: MyString
+
+two:
+  customerid: MyString
+  first_name: MyString
+  last_name: MyString
+  destination: MyString
+  phone: MyString
+  date: 2024-06-06
+  balance: MyString
